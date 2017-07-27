@@ -43,7 +43,8 @@ p.lexError {
   min-width: 50%;
   max-width: 85%;
   float: right;
-  background-color: #f77;
+  background-color: #cc3434;
+  font-family: 'Montserrat', sans-serif;
 }
 
 div#conversation {
