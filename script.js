@@ -80,7 +80,7 @@ function showResponse(lexResponse) {
 
   if (lexResponse.message) {
     var message = linkifyHtml(lexResponse.message);
-    responsePara.appendChild(document.createTextNode(message));
+     $(responsePara).html(message);
     responsePara.appendChild(document.createElement('br'));
   }
   if (lexResponse.dialogState === 'ReadyForFulfillment') {
