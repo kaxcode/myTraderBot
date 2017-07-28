@@ -77,8 +77,10 @@ function showResponse(lexResponse) {
   var conversationDiv = document.getElementById('conversation');
   var responsePara = document.createElement("P");
   responsePara.className = 'lexResponse';
+
   if (lexResponse.message) {
-    responsePara.appendChild(document.createTextNode(lexResponse.message));
+    var message = linkifyHtml(lexResponse.message);
+     $(responsePara).html(message);
     responsePara.appendChild(document.createElement('br'));
   }
   if (lexResponse.dialogState === 'ReadyForFulfillment') {
