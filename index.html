@@ -6,10 +6,17 @@
 	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.41.0.min.js"></script>
 	<link rel="stylesheet" href="layout.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Rubik" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-	<h1 class="app-name">myTrader</h1>
+	<span>
+		<h1 class="app-name">myTrader
+			<i class="fa fa-truck" aria-hidden="true"></i>
+			<i class="fa fa-bus" aria-hidden="true"></i>
+			<i class="fa fa-motorcycle" aria-hidden="true"></i>
+		</h1>
+	</span>
 	<div id="conversation"></div>
 		<form id="chatform" onsubmit="return pushChat();">
 			<input type="text" id="wisdom" size="42" value="" placeholder="Run my search">
